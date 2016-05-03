@@ -1,0 +1,17 @@
+{
+  "name": "akreet-styles",
+  "homepage": "https://github.com/akreet/akreet-styles",
+  "authors": [
+    "admin@akreet.net"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

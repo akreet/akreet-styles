@@ -1,0 +1,146 @@
+<dom-module id="akreet-shared-styles">
+    <template>
+        <style>
+            :host {
+                color: white;
+            }
+
+            /* ----- paper-dialog------------------------------------------------------------------------------------ */
+            paper-dialog {
+                font-family: 'EffraLight', sans-serif !important;
+            }
+
+            paper-dialog.confirm-dialog {
+                min-width: 300px;
+                --paper-dialog-background-color: black;
+                --paper-dialog-color: white;
+            }
+
+            paper-dialog.confirm-dialog paper-button[dialog-dismiss] {
+                color: rgb(193, 103, 103) !important;
+            }
+
+            paper-dialog.confirm-dialog paper-button[dialog-confirm] {
+                color: rgb(0, 162, 211) !important;
+            }
+
+            paper-dialog.confirm-dialog .message {
+                text-align: center;
+            }
+
+
+            /* ----- Sections/Category ------------------------------------------------------------------------------ */
+            section {
+                @apply(--layout-vertical);
+            }
+
+            section .header {
+                color: white;
+                padding: 10px;
+                font-size: 17px;
+                background: var(--akreet-light-glass);
+            }
+
+            /* ----- paper-input ------------------------------------------------------------------------------------ */
+            paper-input,
+            paper-textarea {
+                --paper-input-container-color: white;
+                --paper-input-container-focus-color: white;
+                --paper-input-container-input-color: white;
+                --paper-input-container-invalid-color: #f4b400;
+                --paper-input-error: {
+                    font-family: EffraLight;
+                 };
+                 --paper-input-container-label: {
+                     font-family: EffraLight;
+                 };
+                 --paper-input-container-input: {
+                     font-family: EffraLight;
+                 };
+            }
+
+            paper-input {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            /* ----- textarea --------------------------------------------------------------------------------------- */
+            textarea {
+                -webkit-appearance: none;
+            }
+
+            textarea.schema {
+                width: auto !important;
+                margin: 10px;
+                background: rgba(0, 0, 0, .2);
+                border: 1px solid white;
+                border-radius: 4px;
+            }
+
+            textarea[invalid] {
+                border-color: orange;
+            }
+
+            textarea {
+                color: white;
+                font-family: "Courier New", "Courier";
+                border-radius: inherit;
+                padding: 8px;
+                font-size: 12px;
+            }
+
+            /* ----- .button-panel ---------------------------------------------------------------------------------- */
+            .button-panel {
+                @apply(--layout-fixed-bottom);
+                @apply(--layout-vertical);
+                @apply(--layout-end);
+                background: var(--akreet-light-glass);
+                padding: 8px;
+            }
+
+            .button-panel .dismissive {
+                background: var(--akreet-red);
+            }
+
+            .button-panel .affirmative {
+                background: var(--akreet-blue);
+            }
+
+            .cancel {
+                background: rgb(193, 103, 103);
+                color: white;
+            }
+
+            .save, .update {
+                background: rgb(0, 162, 211);
+                color: white;
+            }
+
+            /* ----- .main-panel-wrapper ---------------------------------------------------------------------------- */
+            .panel-button-padder {
+                padding-bottom: 100px;
+            }
+
+            /* ----- .main-panel-wrapper ---------------------------------------------------------------------------- */
+            .main-panel-wrapper {
+                @apply(--layout-fit);
+                @apply(--layout-vertical);
+                overflow-y: auto;
+            }
+
+
+            /* ----- toolbar-widget-icon ---------------------------------------------------------------------------- */
+            toolbar-widget-icon#toolbar {
+                padding-right: 16px;
+                padding-left: 8px;
+            }
+
+            /* ----- neon-animated-pages ---------------------------------------------------------------------------- */
+            neon-animated-pages {
+                @apply(--layout-flex);
+                overflow-x: hidden;
+            }
+
+        </style>
+    </template>
+</dom-module>
