@@ -100,10 +100,6 @@
                 padding: 8px !important;
             }
 
-            .button-panel paper-button[disabled] {
-                opacity: .5;
-            }
-
             .button-panel .dismissive {
                 background: var(--akreet-red);
                 font-family: EffraLight;
@@ -124,6 +120,10 @@
                 font-family: EffraLight;
                 background: rgb(0, 162, 211);
                 color: white;
+            }
+
+            .save[disabled], .update[disabled], .cancel[disabled] {
+                opacity: .5;
             }
 
             /* ----- .main-panel-wrapper ---------------------------------------------------------------------------- */
