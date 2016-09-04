@@ -1,4 +1,11 @@
 <style is="custom-style">
+    @font-face {
+        font-family: 'EffraLight';
+        src: url('EffraLight-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
     :root {
         --primary-text-color: black;
         --primary-color: black;
@@ -23,16 +30,16 @@
         };
         --paper-input-container-label-floating: {
              color: var(--paper-grey-400);
-        }
+        };
         --paper-toolbar: {
              background: rgba(0, 0, 0, .2);
-        }
+        };
         --paper-toolbar-content: {
              padding: 0 0 0 4px;
-        }
+        };
         --paper-toolbar-title: {
              font-family: EffraLight;
-        }
+        };
 
         --primary-background-color: var(--accent-color);
         --akreet-dark-green: rgb(70, 130,130);
@@ -46,50 +53,9 @@
 
     }
 
-    @font-face {
-        font-family: 'Effra';
-        src: url('Effra-Regular.ttf') format('truetype');
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'Effra';
-        src: url('Effra-Bold.ttf') format('truetype');
-        font-weight: bold;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'Effra';
-        src: url('EffraLight-Regular.ttf') format('truetype');
-        font-weight: 100;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'Effra';
-        src: url('EffraMedium-Regular.ttf') format('truetype');
-        font-weight: 500;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'Effra';
-        src: url('EffraHeavy-Regular.ttf') format('truetype');
-        font-weight: 500;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'EffraLight';
-        src: url('EffraLight-Regular.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-    }
-
     html, body {
         height: 100%;
-        background: var(--primary-background-color);
+        background: var(--accent-color);
         font-family: 'EffraLight', sans-serif !important;
     }
 
